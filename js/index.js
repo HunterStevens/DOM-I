@@ -41,13 +41,30 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//Task 3 NavBar
+const navBar = document.querySelector('header');
+navBar.style.backgroundColor = 'green';
+
+const navEl = document.querySelector('nav');
+
+let newLink1 = document.createElement('a');
+newLink1.textContent = 'tester';
+navEl.prepend(newLink1);
+
+let newLink2 = document.createElement('a');
+newLink2.textContent = 'The Last one';
+navEl.appendChild(newLink2);
+
+//Task 1
 let navText = document.querySelectorAll("a");
-navText[0].textContent = siteContent['nav']['nav-item-1'];
-navText[1].textContent = siteContent['nav']['nav-item-2'];
-navText[2].textContent = siteContent['nav']['nav-item-3'];
-navText[3].textContent = siteContent['nav']['nav-item-4'];
-navText[4].textContent = siteContent['nav']['nav-item-5'];
-navText[5].textContent = siteContent['nav']['nav-item-6'];
+navText[1].textContent = siteContent['nav']['nav-item-1'];
+navText[2].textContent = siteContent['nav']['nav-item-2'];
+navText[3].textContent = siteContent['nav']['nav-item-3'];
+navText[4].textContent = siteContent['nav']['nav-item-4'];
+navText[5].textContent = siteContent['nav']['nav-item-5'];
+navText[6].textContent = siteContent['nav']['nav-item-6'];
+
+
 
 const headerOne = document.querySelector('h1');
 headerOne.textContent = siteContent["cta"]["h1"];
@@ -64,6 +81,7 @@ headerFour[1].textContent = siteContent['main-content']['about-h4'];
 headerFour[2].textContent = siteContent['main-content']['services-h4'];
 headerFour[3].textContent = siteContent['main-content']['product-h4'];
 headerFour[4].textContent = siteContent['main-content']['vision-h4'];
+//contact header
 headerFour[5].textContent = siteContent['contact']['contact-h4'];
 
 const mainText = document.querySelectorAll('p');
@@ -72,6 +90,7 @@ mainText[1].textContent = siteContent['main-content']['about-content'];
 mainText[2].textContent = siteContent['main-content']['services-content'];
 mainText[3].textContent = siteContent['main-content']['product-content'];
 mainText[4].textContent = siteContent['main-content']['vision-content'];
+//contact text
 mainText[5].textContent = siteContent['contact']['phone'];
 mainText[6].textContent = siteContent['contact']['email'];
 mainText[7].textContent = siteContent['contact']['address'];
@@ -81,3 +100,6 @@ mainImage.src = siteContent['main-content']['middle-img-src'];
 
 const footerText = document.querySelector('footer p');
 footerText.textContent = siteContent["footer"]["copyright"];
+
+//task 3
+
